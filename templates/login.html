@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<div>
+    <div class="login-screen">
+        <h1>
+            Login Page
+        </h1>
+    </div>
+    <hr>
+    <div>
+        <form method="POST" action="/user_home">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" name="validationCustomUsername" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+                <small id="usernameHelp" class="form-text text-muted">Enter a unique username (This will be your publically displayed name)</small>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="submit-button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
