@@ -1,0 +1,12 @@
+.submit-button {
+    padding-left: 15px;
+}
+.login-screen {
+    padding-left: 13px;
+}
+.header-container {
+    font-size: 4rem;
+    font-family: 'Times New Roman';
+    background-color: cadetblue;
+    color: white;
+}
