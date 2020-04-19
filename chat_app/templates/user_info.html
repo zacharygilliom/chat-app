@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<div>
+    <div>
+        <form method="POST" action="/user_home">
+            <div class="col-md-4 mb-3">
+                <label for="userFirstName">First Name</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" name="userFirstName" id="userFirstName" placeholder="First Name" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please enter your first name
+                    </div>
+                </div>
+                <small id="userFirstNameHelp" class="form-text text-muted">Enter your First Name</small>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="submit-button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
