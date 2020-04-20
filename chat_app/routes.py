@@ -12,7 +12,7 @@ def home_screen():
 
 
 @app.route('/login', methods=['GET'])
-def login_screen():
+def login():
     return render_template('login.html')
 
 
@@ -42,5 +42,5 @@ def posts():
 @app.route('/register')
 def register():
     form = RegistrationForm()
-    return render_template('register.html')
+    return render_template('register.html', form=form)
 
