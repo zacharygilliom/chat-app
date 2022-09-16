@@ -19,7 +19,7 @@ humanize==0.5.1
 idna==2.8
 langtable==0.0.51
 libcomps==0.1.15
-Mako==1.1.0.dev0
+Mako==1.2.2
 MarkupSafe==1.1.1
 ntplib==0.3.3
 olefile==0.46
